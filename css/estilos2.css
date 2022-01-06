@@ -1,0 +1,57 @@
+@media (max-width: 480px) {
+  audio{
+    display:block;
+    width: 100%;
+  }
+  .nav-link{
+    display: inline-block;
+  }
+  footer div div{
+    font-size: 12px;
+  }
+}
+
+@media (min-width:481px) and (max-width:800px) {
+  audio{
+    display:block;
+    width: 100%;
+  }
+}
+
+@media (min-width:801px) and (max-width:1500px) {
+  audio{
+    display:block;
+    width: 100%;
+  }
+}
+
+@media (min-width:1501px) and (max-width:2800px) {
+  audio{
+    display:block;
+    width: 100%;
+  }
+  footer div div{
+    font-size: 1.4em;
+  }
+}
+
+
+
+
+/* ENLACE OYE*/
+h2{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size:1.5em;
+  color:white;
+}
+/* tamaño de letra enlaces inicio y canciones*/
+.shadow-sm{
+  font-size: 18px;
+}
+.fuente{
+  font-size: 20px;
+  margin-top: 3px;
+}
+.contenedorCanciones{
+  background-color: lightgray;
+}

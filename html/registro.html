@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Fuente personalizada Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS personalizado -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Estilos CSS adicionales -->
+    <link rel="stylesheet" href="../css/estilos1.css"> 
+
+    <title>OYE - Registro</title>
+  </head>
+
+  <body>
+
+    <!-- DIAGRAMACION ENCABEZADO  -->
+    <header>
+      <div class="bg-light">
+        <div class="row bg-dark m-1 py-1">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-md navbar-dark bg-info">
+              <div class="container-fluid bg-info">
+                <img src="../images/logo.png" alt="logo">
+                <div class="pt-2 pl-2">
+                  <a class="navbar-brand" href="../index.html"><h2>OYE</h2></a>
+                </div>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#barra"
+                  aria-controls="barra"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="barra">
+                  <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                      <a class="nav-link shadow-sm my-1" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link shadow-sm my-1" href="./canciones.html">Canciones</a>
+                    </li>
+                  </ul>
+
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link bg-secondary text-white px-1 my-1 mx-1 rounded" data-toggle="modal" data-target="#modal">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link bg-primary px-1 my-1 mx-1 rounded" href="./login.html">Inicio de Sesión</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link bg-primary px-1 my-1 mx-1 rounded" href="./registro.html">Registro</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <!-- DIAGRAMACION CONTENIDO PRINCIPAL (REGISTRO) -->
+    <main>
+      <div class="container-fluid bg-ligth my-4 p-2">
+        <div class="col-md-6 col-lg-7 mx-auto">
+          <div class="col-12 bg-secondary rounded-pill p-2 mt-2">
+            <h5 class="text-white text-center pt-1"> REGISTRO </h5>
+          </div>
+          <div class="col-12 bg-ligth p-1 mb-2">
+            <form action="">
+              <div class="form-group">
+              
+                <label for="correo" class="mt-2">Correo electrónico *</label>
+                <input class="form-control" type="email" placeholder="nombre@gmail.com" id="correo" name="email">
+                <div class="col-12 mt-1 errores" id="errorCorreo"></div>
+
+                <label for="contrasena" class="mt-2">Contraseña *</label>
+                <input class="form-control" type="password" placeholder="*******" id="contrasena" name="contrasena">
+                <div class="col-12 mt-1 errores" id="errorContrasena"></div>
+
+                <label for="confirmacion" class="mt-2">Confirmacion contraseña *</label>
+                <input class="form-control" type="password" placeholder="*******" id="confirmacion" name="confirmacion">
+                <div class="col-12 mt-1 errores" id="errorConfirmacion"></div>
+
+                <label for="musical" class="mt-2">Género musical favorito *</label>
+                <select class="form-control" name="musical" id="musical">
+                  <option value="">Seleccione</option>
+                  <option value="1">Rock</option>
+                  <option value="2">Pop</option>
+                  <option value="3">Salsa</option>
+                </select>
+                <div class="col-12 mt-1 errores" id="errorGenero"></div>
+
+                <label class="mt-2">Edad *</label>
+                <div class="col-12 mb-2 errores" id="errorEdad"></div>
+                <div class="mb-3">
+                  <div>
+                    <input type="radio" name="edades" id="men" value="menor">
+                    <label for="men">Menor a 20</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="edades" id="med" value="medio">
+                    <label for="med">20 a 40</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="edades" id="may" value="mayor">
+                    <label for="may">Mayor a 50</label>
+                  </div>
+                </div>
+
+                <label for="terminos">
+                  <input type="checkbox" name="terminos" id="terminos" value="acepta">
+                  Acepta términos y condiciones *
+                </label>
+                <div class="col-12 mb-2 errores" id="errorTerminos"></div>
+                
+                <input class="bg-primary text-white rounded mt-2 p-1" type="submit" value="Continuar" onclick="return validar(this.form)">
+
+              </div>
+            </form>
+            <p class="my-2"> <b>* Campos Obligatorios</b> </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <!-- DIAGRAMACION PIE DE PAGINA -->
+    <footer class="container-fluid bg-dark text-white py-1">
+      <div class="row bg-info">
+        <div class="col-auto mr-auto text-left">
+          Comparte la música
+        </div>
+        <div class="col-auto text-right">
+          @Derechos reservados
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/registro.js"></script>
+
+
+    <!-- VENTANA MODAL (REGISTRO -> Contacto) -->
+    <div class="container mt-4">
+      <div class="modal" tabindex="-1" role="dialog" id="modal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <h5 class="modal-title">Contacto</h5>
+              <button type="button" class="close" data-dismiss="modal">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+            <div class="modal-body">
+              <p>info@oye.com</p>
+              <a href="#">+1 123 123123123</a>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
+ 

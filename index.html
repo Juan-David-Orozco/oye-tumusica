@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Fuente personalizada Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS personalizado -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Estilos CSS adicionales -->
+    <link rel="stylesheet" href="./css/estilos1.css">
+
+    <title>OYE - Escucha tu musica gratis</title>
+  </head>
+
+  <body>
+
+    <!-- DIAGRAMACION ENCABEZADO -->
+    <header>
+      <div class="bg-light">
+        <div class="row bg-dark m-1 py-1">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-md navbar-dark bg-info">
+              <div class="container-fluid bg-info">
+                <img src="./images/logo.png" alt="logo">
+                <div class="pt-2 pl-2">
+                  <a class="navbar-brand" href="./index.html"><h2>OYE</h2></a>
+                </div>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#barra"
+                  aria-controls="barra"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="barra">
+                  <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link shadow-sm my-1" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link shadow-sm my-1" href="./html/canciones.html">Canciones</a>
+                    </li>
+                  </ul>
+                  
+                  <ul class="navbar-nav">
+                    <li class="nav-item"> 
+                      <a class="nav-link bg-secondary text-white px-1 my-1 mx-1 rounded" data-toggle="modal" data-target="#modal">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link bg-primary px-1 my-1 mx-1 rounded" href="./html/login.html">Inicio de Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link bg-primary px-1 my-1 mx-1 rounded" href="./html/registro.html">Registro</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- DIAGRAMACION CONTENIDO PRINCIPAL (INICIO) -->
+    <main>
+      <div class="container-fluid bg-light my-3 p-2" id="fondo">
+        <div class="col-md-9 mx-auto p-1">
+
+          <!-- FILA 1 : CONTENIDO + CARRUSEL -->
+          <div class="row justify-content-center py-3 m-1">
+            <!-- Contenido -->
+            <div class="col-12 col-md-5 align-self-center m-1">
+              <h4>
+                Canciones gratis para la comunidad, entra y disfruta!
+              </h4>
+              <p>
+                Escucha tus canciones favoritas de manera gratuita.
+              </p>
+              <a class="btn btn-primary" href="#" role="button">Ver más</a>
+            </div>
+            <!-- Carrusel -->
+            <div class="col-12 col-md-6 align-self-center text-center m-1 py-1">
+              <div id="carrusel" class="carousel slide" data-ride="carousel">
+                <!-- Indicadores -->
+                <ol class="carousel-indicators">
+                  <li 
+                    data-target="#ejemploCarrusel" 
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                  <li 
+                    data-target="#ejemploCarrusel"
+                    data-slide-to="1"
+                  ></li>
+                  <li 
+                    data-target="#ejemploCarrusel" 
+                    data-slide-to="2"
+                  ></li>
+                </ol>
+                <!-- Laminas -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/portada1.svg" class="img-fluid img-thumbnail"/>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/portada2.svg" class="img-fluid img-thumbnail"/>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/portada3.svg" class="img-fluid img-thumbnail"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!-- FILA 2 : TOP 3 -->
+          <div class="row justify-content-center py-1 m-1">
+            <div class="col-12 p-2">
+              <h3 class="text-center my-3">Top 3</h3>
+              <table class="table">
+                <thead>
+                  <th class="border-bottom border-top border-dark text-center">Nombre</th>
+                  <th class="border-bottom border-top border-dark text-center">Canción</th>
+                </thead>
+                <tbody>
+                  <tr class="col-12">
+                    <td class="border-bottom border-top border-dark text-center nombresCanciones"> </td>
+                    <td class="border-bottom border-top border-dark text-center">
+                      <audio class="rutasCanciones"></audio>
+                    </td>
+                  </tr>
+                  <tr class="col-12">
+                    <td class="border-bottom border-top border-dark text-center nombresCanciones"> </td>
+                    <td class="border-bottom border-top border-dark text-center">
+                      <audio class="rutasCanciones"></audio>
+                    </td>
+                  </tr>
+                  <tr class="col-12">
+                    <td class="border-bottom border-top border-dark text-center nombresCanciones"> </td>
+                    <td class="border-bottom border-top border-dark text-center">
+                      <audio class="rutasCanciones"></audio>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- DIAGRAMACION PIE DE PAGINA -->
+    <footer class="container-fluid bg-dark text-white py-1">
+      <div class="row bg-info">
+        <div class="col-auto mr-auto text-left">
+          Comparte la música
+        </div>
+        <div class="col-auto text-right">
+          @Derechos reservados
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+
+
+    <!-- VENTANA MODAL (INICIO -> Contacto) -->
+    <div class="container mt-4">
+      <div class="modal" tabindex="-1" role="dialog" id="modal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <h5 class="modal-title">Contacto</h5>
+              <button type="button" class="close" data-dismiss="modal">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+            <div class="modal-body">
+              <p>info@oye.com</p>
+              <a href="#">+1 123 123123123</a>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,161 @@
+/* ESTILOS PARA CADA RESOLUCION*/
+@media (max-width: 480px) {
+
+  .nav-link{
+    display: inline-block;
+  }
+  h4{
+    text-align: left;
+    font-size: 20px;
+  }
+  div div p{
+    font-size: 14px;
+  }
+  h3{
+    font-size: 1.5em;
+  }  
+  table td:first-child, table th:first-child{
+    font-size: 12px;
+    width: 20%;
+  }
+  table td:first-child{
+    font-size: 12px;
+  }
+  table th:last-child{
+    font-size: 12px;
+  }
+  audio{
+    display:block;
+    width: 100%;
+  }
+  footer div div{
+    font-size: 12px;
+  }
+
+}
+
+@media (min-width:481px) and (max-width:800px) {
+
+  .nav-link{
+    display: inline-block;
+  }
+  h4{
+    text-align: left;
+    font-size: 16px;
+  }
+  div div p{
+    font-size: 13px;
+  }
+  h3{
+    font-size: 26px;
+  }
+  table td:first-child, table th:first-child{
+    font-size: 14px;
+    width: 30%;
+  }
+  table th:last-child{
+    font-size: 14px;
+  }
+  footer div div{
+    font-size: 14px;
+  }
+
+}
+
+@media (min-width:801px) and (max-width:1500px) {
+
+  h4{
+    text-align: left;
+    font-size: 1.7em;
+  }
+  div div p{
+    font-size: 1.1em;
+  }
+  h3{
+    font-size: 2.4em;
+  }
+  table td:first-child, table th:first-child{
+    font-size: 1.2em;
+    width: 40%;
+  }
+  table th:last-child{
+    font-size: 1.2em;
+  }
+
+}
+
+@media (min-width:1501px) and (max-width:2800px) {
+  
+  h4{
+    text-align: left;
+    font-size: 2.2em;
+  }
+  div div p{
+    font-size: 1.6em;
+  }
+  h3{
+    font-size: 3em;
+  }
+  table td:first-child, table th:first-child{
+    font-size: 1.6em;
+    width: 50%;
+  }
+  table th:last-child{
+    font-size: 1.6em;
+  }
+  footer div div{
+    font-size: 1.4em;
+  }
+
+}
+
+
+/* ESTILOS GLOBALES*/
+
+/* ENLACE OYE*/
+h2{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size:1.5em;
+  color:white;
+}
+/* Titulo Contenido */
+h3{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+/* TOP 3*/
+h4{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+/* texto (color y fuente) tabla Top3 */
+table td{
+  font-family: Arial, Helvetica, sans-serif;
+  color: blue;
+}
+/* Filas contenedoras (1: contenido+carrusel, 2: Top3)*/
+div div .row{
+  background-color:lightgrey;
+  border: 1px solid black;
+}
+/* Alineacion vertical nombres canciones*/
+table td:first-child{
+  vertical-align: middle;
+}
+/* tamaño de letra enlaces inicio y canciones*/
+.shadow-sm{
+  font-size: 18px;
+}
+/* Texto (fuente - color) validacion formularios */
+.errores{
+  color:red;
+  font-size:14px;
+}
+/* Color texto (*Campos Obligatorios) */
+div p b{
+  color:darkblue;
+}
+
+
+
+
+
+

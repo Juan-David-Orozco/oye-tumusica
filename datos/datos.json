@@ -1,0 +1,58 @@
+{
+	"canciones": [
+		{
+			"nombre": "Billie jean",
+			"ruta": "./canciones/uno.mp3",
+			"reproducciones": 80,
+			"icono": 4
+		},
+		{
+			"nombre": "Un beso",
+			"ruta": "./canciones/dos.mp3",
+			"reproducciones": 90,
+			"icono": 1
+		},
+		{
+			"nombre": "Satania",
+			"ruta": "./canciones/tres.mp3",
+			"reproducciones": 50,
+			"icono": 3
+		},
+		{
+			"nombre": "El idioma dioses",
+			"ruta": "./canciones/cuatro.mp3",
+			"reproducciones": 90,
+			"icono": 2
+		},
+		{
+			"nombre": "Byob",
+			"ruta": "./canciones/cinco.mp3",
+			"reproducciones": 50,
+			"icono": 4
+		},
+		{
+			"nombre": "La raza",
+			"ruta": "./canciones/seis.mp3",
+			"reproducciones": 10,
+			"icono": 1
+		},
+		{
+			"nombre": "Calor",
+			"ruta": "./canciones/siete.mp3",
+			"reproducciones": 20,
+			"icono": 3
+		},
+		{
+			"nombre": "El triste",
+			"ruta": "./canciones/ocho.mp3",
+			"reproducciones": 50,
+			"icono": 1
+		},
+		{
+			"nombre": "Beat it",
+			"ruta": "./canciones/nueve.mp3",
+			"reproducciones": 10,
+			"icono": 2
+		}
+	]
+}
